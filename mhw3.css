@@ -1,0 +1,393 @@
+html {
+    font-size: 20px;
+}
+  
+body {
+    color: white;
+    font-family: 'Roboto-Slab', serif;
+    margin: 0px;
+}
+  
+@media (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+}
+  
+header {
+    color: white;
+    background-image: url(https://www.centropegaso.it/wp-content/uploads/2019/10/bagno-turco.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+@media (max-width: 500px) {
+    header {
+      height: 400px;
+      line-height: 1.2;
+    }
+}
+  
+#overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+  
+header nav {
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    height: 12%;
+    top: 15px;
+    left: 0;
+    right: 0;
+  
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 2px;
+  
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+  
+#menu {
+    display: none;
+}
+  
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 7px;
+}
+  
+@media (max-width: 500px) {
+    #links {
+      display: none;
+    }
+  
+    #menu {
+      display: block;
+    }
+}
+  
+header img {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    height: 100px;
+    width: 120px;
+    border: 2px solid teal;
+    border-radius: 50%;
+}
+  
+@media (max-width: 500px) {
+    header img {
+      display: none;
+    }
+}
+  
+#links a {
+    margin: 22px;
+    padding: 6px 8px;
+    border-radius: 100px;
+  
+    color: white;
+    text-decoration: none;
+}
+  
+#links a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+  
+header h1 {
+    text-align: center;
+    z-index: 2;
+}
+  
+header h1 em {
+    font-size: 1rem;
+    letter-spacing: 5px;
+}
+  
+header h1 strong {
+    color: goldenrod;
+    font-size: 3.4rem;
+    letter-spacing: 10px;
+}
+  
+@media (max-width: 500px) {
+    header h1 strong {
+      font-size: 2em;
+      letter-spacing: 5px;
+    }
+  
+    header h1 em {
+      font-size: .5em;
+      letter-spacing: 2.5px;
+    }
+}
+  
+section {
+    background-color: white;
+    color: teal;
+    text-align: center;
+    margin: 50px 100px;
+}
+  
+@media (max-width: 500px) {
+    section {
+        margin: 20px 5px 0px 5px;
+    }
+}
+    
+#main {
+    margin: 60px 0px 20px 0px;
+    padding: 30px;
+    text-align: center;  
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+  
+  
+#main h1{
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+  
+#main p{
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+  
+@media (max-width: 500px) {
+    #main p {
+      width: 100%;
+      margin-bottom: 2em;
+    }
+}
+
+article, #search {
+    margin: 100px 100px;
+}
+
+@media (max-width: 500px) {
+    article {
+        margin: 0px 50px 50px 50px;
+    }
+}
+
+.department {
+    margin-bottom: 100px;
+}
+
+.department h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px goldenrod;
+    background-color: teal;
+    padding: 10px;
+    border-radius: 3px;
+
+    margin-bottom: 60px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+}
+
+.services .block_image {
+    width: 50%;
+    margin-bottom: 80px;
+
+    border: 1px solid goldenrod;
+}
+
+.services .list {
+    display: block;
+    color: teal;
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 50px;
+    letter-spacing: 3px;
+
+    margin-top: 60px;
+}
+
+@media (max-width: 500px) {
+    .department {
+        margin-bottom: 50px;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .services .block_image {
+        width: 95%;
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+
+    .services .list {
+        margin-top: 20px;
+        margin-left: 10px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+}
+
+#search h1 {
+    color: teal;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#select {
+    width: 200px;
+    height: 40px;
+    color: teal;
+    font-size: .8rem;
+    margin-left: 400px;
+    border: 1.5px solid goldenrod;
+    border-radius: 5px;
+}
+
+#send {
+    color: white;
+    background-color: teal;
+    padding: 6px 10px;
+    margin-left: 20px;
+    border-radius: 25px;
+}
+
+#send:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    #search {
+        margin: 100px 50px 50px 50px;
+    }
+
+    #select {
+        margin-left: 40px;
+    }
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0px 80px 0px;
+}
+  
+#gallery img {
+    width: 300px;
+    border: 1.5px solid goldenrod;
+
+    margin-top: 60px;
+}
+
+#modal.hidden {
+    display: none;
+}
+
+#modal {
+	position: fixed;
+    top: 0px;
+    left: 0px;
+	height: 100vh;
+	width: 100vw;
+	
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+#modal img {
+	height: 80%;
+	border: 1.5px solid goldenrod;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+footer {
+    background-color: teal;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    color: rgba(0,0,0,0.7);
+    font-size: .75rem;
+}
+   
+#details {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    letter-spacing: 1px;
+    position: relative;
+    margin: 100px 0px;
+}
+   
+@media (max-width: 500px) {
+    #details {
+        flex-direction: column;
+        margin: 40px 0px;
+    }
+}
+   
+#details div {
+     width: calc(33% - 50px);
+     letter-spacing: 1px;
+}
+   
+@media (max-width: 500px) {
+    #details div {
+        width: 100%;
+        margin: 10px 0px;
+    }
+}
+   
+#details h1 {
+    font-size: 1rem;
+    color:goldenrod;
+    letter-spacing: 1px;
+}
+   
+#firma h1 {
+    font-size: 1.75rem;
+    color:goldenrod;
+    letter-spacing: 1px;
+}
+   
+#firma p{
+    font-weight: bold;
+}

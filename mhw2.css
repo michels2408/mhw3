@@ -1,0 +1,524 @@
+html {
+  font-size: 20px;
+}
+  
+body {
+  color: white;
+  font-family: 'Roboto-Slab', serif;
+  margin: 0px;
+}
+  
+@media (max-width: 500px) {
+  body {
+      font-size: 14px;
+  }
+}
+  
+header {
+  color: white;
+  background-image: url(https://imgix.bustle.com/uploads/image/2021/1/13/9165caaa-193d-490d-a12e-459037bb4622-_desktop-201110-1605035977332.png?w=1200&h=630&fit=crop&crop=faces&fm=jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  
+@media (max-width: 500px) {
+  header {
+    height: 400px;
+    line-height: 1.2;
+  }
+}
+  
+#overlay {
+  background-color:
+    rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+  
+header nav {
+  color: white;
+  background-color: rgba(0,0,0,0.3);
+  position: absolute;
+  height: 12%;
+  top: 15px;
+  left: 0;
+  right: 0;
+
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 2px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+  
+#menu {
+  display: none;
+}
+  
+#menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 7px;
+}
+  
+@media (max-width: 500px) {
+  #links {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+}
+  
+header img {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  height: 100px;
+  width: 120px;
+  border: 2px solid teal;
+  border-radius: 50%;
+}
+  
+@media (max-width: 500px) {
+  header img {
+    display: none;
+  }
+}
+  
+#links a {
+  margin: 22px;
+  padding: 6px 8px;
+  border-radius: 100px;
+
+  color: white;
+  text-decoration: none;
+}
+  
+#links a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+  
+header h1 {
+  text-align: center;
+  z-index: 2;
+}
+  
+header h1 em {
+  font-size: 1rem;
+  letter-spacing: 5px;
+}
+  
+header h1 strong {
+  color: goldenrod;
+  font-size: 3.4rem;
+  letter-spacing: 10px;
+}
+  
+@media (max-width: 500px) {
+  header h1 strong {
+    font-size: 2em;
+    letter-spacing: 5px;
+  }
+  
+  header h1 em {
+    font-size: .5em;
+    letter-spacing: 2.5px;
+  }
+}
+
+h2 {
+  color: teal;
+  font-size: 0.9rem;
+  text-align: right;
+  margin-right: 100px;
+  margin-bottom: 10px;
+  text-decoration: underline 1px solid goldenrod;
+}
+
+input {
+  color: teal;
+  width: 180px;
+  margin-left: 980px;
+}
+
+@media (max-width: 500px) {
+  h2 {
+    font-size: 0.7rem;
+    margin-right: 20px;
+  }
+
+  input {
+    width: 145px;
+    margin-left: 240px;
+  } 
+}
+  
+section {
+  background-color: white;
+  color: teal;
+  text-align: center;
+  margin: 50px 100px;
+}
+  
+@media (max-width: 500px) {
+  section {
+    margin: 20px 5px;
+  }
+}
+  
+#text {
+  margin: 40px 0px;
+  padding: 30px;
+  text-align: center;  
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.product_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0px 80px 0px;
+}
+
+.product_grid div {
+  width: calc(28% - 20px);
+  background-color: mintcream;
+  border: 1px solid goldenrod;
+  border-radius: 2%;
+  padding: 10px 25px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-size: 1rem;
+  color: teal;
+  text-align: left;
+  letter-spacing: 2px;
+  font-style: italic;
+  line-height: .5px;
+}
+
+
+@media(max-width: 500px) {
+  .product_grid div {
+      width: calc(38.5% - 4px);
+      justify-content: space-around;
+      padding: 5px 12px;
+      margin: 10px 12px;
+  }
+}
+
+.product_grid div img {
+  width: 100%;
+  margin-bottom: 0px;
+
+}
+
+.product_grid div .info_pref{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin: 0px;
+  padding: 0px 200px 0px 0px;
+  
+
+  text-align: left;
+  border: 0px;
+}
+
+.product_grid div img.checkbox {
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+
+  cursor: pointer;
+}
+
+.product_grid div .info_pref .info{
+  display: block;
+  margin: 0px;
+  padding: 0px 200px 0px 20px;
+  
+  font-size: 0.95rem;
+  line-height: 20px;
+  border: 0px;
+}
+
+.product_grid div .properties{
+  font-size: 0.9rem;
+  text-decoration: underline;
+  cursor: pointer;
+
+  line-height: .5px;;
+  margin: 0px;
+  padding: 0px 10px;
+  border: 0px;
+}
+
+.product_grid div .info_pref .info p, .product_grid div .properties h1{
+  width: 200px;
+  line-height: 20px;
+  
+  margin: 5px 5px;
+  padding: 0px;
+  border: 0px;
+}
+
+.product_grid div .info_pref .info p {
+  font-style: normal;
+}
+
+.product_grid div .properties p {
+  text-decoration: underline solid mintcream;
+  font-style: normal;
+  cursor: default;
+  
+  line-height: 20px;
+  width: 200px;
+  height: 150px;
+}
+
+.hidden p{
+  display: none;
+} 
+
+.hidden {
+  display: none;
+}
+
+@media(max-width:500px) {
+  .product_grid div .info_pref{
+    padding: 0px 90px 0px 0px;
+  }
+
+  .product_grid div img.checkbox{
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+  }
+
+  .product_grid div .info_pref .info{
+    padding: 0px 100px 0px 0px;
+    font-size: .6rem;
+    line-height: 15px;
+  }
+
+  .product_grid div .info_pref .info p, .product_grid div .properties{
+    width: 100px;
+    font-size: .6rem;
+    line-height: 10px;
+    padding: 0px;
+  }
+
+  .product_grid div .properties p{
+    width: 150px;
+    height: 165px;
+    margin: 2px;
+    font-size: .6rem;
+  }
+}
+
+#fav {
+  background-color: white;
+  color: teal;
+  text-align: left;
+  margin: 50px 100px;
+}
+
+#fav #fav_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0px 80px 0px;
+}
+
+#fav #fav_grid div {
+  width: calc(23% - 20px);
+  background-color: mintcream;
+  border: 1px solid goldenrod;
+  border-radius: 2%;
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-size: .7rem;
+  color: teal;
+  text-align: left;
+  letter-spacing: 2px;
+  font-style: italic;
+  line-height: .5px;
+}
+
+@media(max-width: 500px) {
+  #fav {
+    margin: 25px 25px;
+    text-align: center;
+  }
+
+  #fav #fav_grid {
+    padding: 10px 0px 0px 0px;
+  }
+
+  #fav #fav_grid div {
+      width: calc(40% - 4px);
+      justify-content: space-around;
+      padding: 5px 12px;
+      margin: 5px 6px;
+  }
+}
+
+#fav_grid div img {
+  width: 85%;
+  margin-bottom: 0px;
+
+}
+
+#fav #fav_grid .fav_container .fav_info_pref {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin: 0px;
+  padding: 0px 120px 0px 0px;
+  
+
+  text-align: left;
+  border: 0px;
+}
+
+#fav #fav_grid .fav_container img.fav_checkbox {
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+
+  cursor: pointer;
+}
+
+#fav #fav_grid .fav_container .fav_info_pref .fav_info{
+  display: block;
+  margin: 0px;
+  padding: 0px 150px 0px 20px;
+  
+  font-size: 0.7rem;
+  line-height: 20px;
+  border: 0px;
+}
+
+#fav #fav_grid .fav_container .fav_info_pref .fav_info p{
+  width: 150px;
+  line-height: 20px;
+  
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+@media(max-width:500px) {
+  #fav #fav_grid .fav_container .fav_info_pref{
+    padding-right: 20px;
+    width: 130px;
+
+  }
+
+  #fav #fav_grid .fav_container img.fav_checkbox{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+  }
+
+  #fav #fav_grid .fav_container .fav_info_pref .fav_info{
+    padding: 0px;
+    width: 140px;
+    font-size: .4rem;
+    line-height: 15px;
+
+  }
+
+  #fav #fav_grid .fav_container .fav_info_pref .fav_info p{
+    width: 100px;
+    font-size: .6rem;
+    line-height: 10px;
+    padding: 0px;
+    margin-bottom: 5px;
+  }
+}
+
+footer {
+  background-color: teal;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   
+  color: rgba(0,0,0,0.7);
+  font-size: .75rem;
+}
+   
+#details {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  letter-spacing: 1px;
+  position: relative;
+  margin: 100px 0px;
+}
+   
+@media (max-width: 500px) {
+  #details {
+    flex-direction: column;
+    margin: 40px 0px;
+  }
+}
+   
+#details div {
+  width: calc(33% - 50px);
+  letter-spacing: 1px;
+}
+   
+@media (max-width: 500px) {
+  #details div {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+   
+#details h1 {
+  font-size: 1rem;
+  color:goldenrod;
+  letter-spacing: 1px;
+}
+   
+#firma h1 {
+  font-size: 1.75rem;
+  color:goldenrod;
+  letter-spacing: 1px;
+}
+   
+#firma p{
+  font-weight: bold;
+}
+  

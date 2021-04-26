@@ -1,0 +1,337 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  color: white;
+  font-family: 'Roboto-Slab', serif;
+  margin: 0px;
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+header {
+  color: white;
+  background-image: url(https://media.tacdn.com/media/attractions-splice-spp-674x446/06/73/26/c3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  header {
+    height: 400px;
+    line-height: 1.2;
+  }
+}
+
+#overlay {
+  background-color:
+    rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+header nav {
+  color: white;
+  background-color: rgba(0,0,0,0.3);
+  position: absolute;
+  height: 12%;
+  top: 15px;
+  left: 0;
+  right: 0;
+
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 2px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#menu {
+  display: none;
+}
+
+#menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 7px;
+}
+
+@media (max-width: 500px) {
+  #links {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+}
+
+header img {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  height: 100px;
+  width: 120px;
+  border: 2px solid teal;
+  border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+  header img {
+    display: none;
+  }
+}
+
+#links a {
+  margin: 22px;
+  padding: 6px 8px;
+  border-radius: 100px;
+
+  color: white;
+  text-decoration: none;
+}
+
+#links a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+header h1 {
+  text-align: center;
+  z-index: 2;
+}
+
+header h1 em {
+  font-size: 1rem;
+  letter-spacing: 5px;
+}
+
+header h1 strong {
+  color: goldenrod;
+  font-size: 3.4rem;
+  letter-spacing: 10px;
+}
+
+@media (max-width: 500px) {
+  header h1 strong {
+    font-size: 2em;
+    letter-spacing: 5px;
+  }
+
+  header h1 em {
+    font-size: .5em;
+    letter-spacing: 2.5px;
+  }
+}
+
+section {
+  background-color: white;
+  color: teal;
+  text-align: center;
+  margin: 50px 100px;
+}
+
+@media (max-width: 500px) {
+  section {
+    margin: 20px 5px;
+  }
+}
+
+#main {
+  margin: 60px 0px;
+  padding: 30px;
+  text-align: center;  
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+
+#main h1, #prodotti h1 {
+ font-size: 2rem;
+ letter-spacing: 1px;
+}
+
+#main p, #prodotti p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 500px) {
+  #main p {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+
+a.button {
+  color: white;
+  background-color: teal;
+  padding: 10px 15px;
+  border-radius: 100px;
+  
+  font-size: 1rem;
+}
+
+a.button:hover{
+  text-decoration: underline;
+  background-color: lightseagreen;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  #main a.button{
+    font-size:.7rem;
+  }
+}
+
+#dipart {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  letter-spacing: 1px;
+  position: relative;
+  margin: 50px 0px;
+}
+
+@media (max-width: 500px) {
+  #dipart {
+    flex-direction: column;
+  }
+}
+
+#dipart div {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+#dipart img {
+  width: 100%;
+  height: 40%;
+}
+
+@media (max-width: 500px) {
+  #dipart img {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+#dipart a.button, #prodotti a.button{
+  position: relative;
+  top: 40px;
+}
+
+#prodotti {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  letter-spacing: 1px;
+  position: relative;
+  margin: 100px 0px;
+}
+
+@media (max-width: 500px) {
+  #prodotti {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+#prodotti div {
+  flex-grow: 1;
+}
+
+#text_prod {
+  display: block;
+} 
+
+#prodotti img {
+  width: 35%;
+  height: 110%;
+}
+
+.button {
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  #prodotti img{
+    display: none;
+  }
+}
+
+footer {
+ background-color: teal;
+ color: white;
+ padding: 30px;
+ text-align: center;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+
+ color: rgba(0,0,0,0.7);
+ font-size: .75rem;
+}
+
+#details {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  letter-spacing: 1px;
+  position: relative;
+  margin: 100px 0px;
+}
+
+@media (max-width: 500px) {
+  #details {
+    flex-direction: column;
+    margin: 40px 0px;
+  }
+}
+
+#details div {
+  width: calc(33% - 50px);
+  letter-spacing: 1px;
+}
+
+@media (max-width: 500px) {
+  #details div {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+#details h1 {
+  font-size: 1rem;
+  color:goldenrod;
+  letter-spacing: 1px;
+}
+
+#firma h1 {
+  font-size: 1.75rem;
+  color:goldenrod;
+  letter-spacing: 1px;
+}
+
+#firma p{
+  font-weight: bold;
+}
